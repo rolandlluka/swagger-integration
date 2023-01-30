@@ -1,14 +1,10 @@
-{
-  "openapi" : "3.0.0",
-  "info" : {
-    "title" : "rrrw",
-    "description" : "",
-    "version" : "1"
-  },
-  "servers" : [ {
-    "url" : "https://virtserver.swaggerhub.com/ROLANDLLUKA_1/rrrw/1",
-    "description" : "SwaggerHub API Auto Mocking"
-  } ],
-  "paths" : { },
-  "components" : { }
-}
+openapi: 3.0.0
+info:
+  version: '1'
+  title: rrrw
+  description: ''
+paths: {}
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/ROLANDLLUKA_1/rrrw/1
