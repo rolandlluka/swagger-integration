@@ -1,10 +1,24 @@
+---
 openapi: 3.0.0
 info:
-  version: '1'
-  title: rrrw
-  description: ''
-paths: {}
+  title: Antigel API Docs
+  description: ANTIGEL API
+  contact:
+    email: roland@une.ch
+  license:
+    name: UNE
+    url: http://www.rolandll.ch
+  version: 1.0.0
 servers:
-  # Added by API Auto Mocking Plugin
-  - description: SwaggerHub API Auto Mocking
-    url: https://virtserver.swaggerhub.com/ROLANDLLUKA_1/rrrw/1
+  - url: https://antigel.test
+    description: Development Server
+tags:
+  - name: news(admin)
+    description: Secured Admin-only calls
+paths:
+  /fr/api/v1/news:
+    post:
+      $ref: ./paths/News.yaml
+  /fr/api/v1/posts:
+    get:
+      $ref: ./paths/Post.yaml
